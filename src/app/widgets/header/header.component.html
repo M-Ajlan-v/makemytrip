@@ -74,116 +74,155 @@
     </div>
 
     <!-- Navigation Menu -->
-  <ul class="nav-list">
-    <li class="nav-item active">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa fa-plane" aria-hidden="true"></i>
+     <ul class="nav-list">
+  <li class="nav-item"
+      [class.active]="activeIndex === 0"
+      (click)="setActive(0)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa fa-plane" aria-hidden="true"></i>
+      </span>
+      <span class="nav-text">Flights</span>
+    </a>
+  </li>
+
+  <li class="nav-item"
+      [class.active]="activeIndex === 1"
+      (click)="setActive(1)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa fa-building" aria-hidden="true"></i>
+      </span>
+      <span class="nav-text">Hotels</span>
+    </a>
+  </li>
+
+  <li class="nav-item lt"
+      [class.active]="activeIndex === 2"
+      (click)="setActive(2)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-house-chimney"></i>
+      </span>
+      <span class="nav-text">Villas & Homestays</span>
+    </a>
+  </li>
+
+  <li class="nav-item"
+      [class.active]="activeIndex === 3"
+      (click)="setActive(3)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-umbrella-beach"></i>
+      </span>
+      <span class="nav-text">Holiday Packages</span>
+    </a>
+  </li>
+
+  <li class="nav-item"
+      [class.active]="activeIndex === 4"
+      (click)="setActive(4)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-train"></i>
+      </span>
+      <span class="nav-text">Trains</span>
+    </a>
+  </li>
+
+  <li class="nav-item"
+      [class.active]="activeIndex === 5"
+      (click)="setActive(5)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-bus"></i>
+      </span>
+      <span class="nav-text">Buses</span>
+    </a>
+  </li>
+
+  <li class="nav-item"
+      [class.active]="activeIndex === 6"
+      (click)="setActive(6)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-taxi"></i>
+      </span>
+      <span class="nav-text">Cabs</span>
+    </a>
+  </li>
+
+  <li class="nav-item" id="nav-tour"
+      [class.active]="activeIndex === 7"
+      (click)="setActive(7)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-map-location-dot"></i>
+      </span>
+      <span class="nav-text">Tours & Attraction</span>
+    </a>
+  </li>
+
+  <li class="nav-item"
+      [class.active]="activeIndex === 8"
+      (click)="setActive(8)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-passport"></i>
+      </span>
+      <span class="nav-text">Visa</span>
+    </a>
+  </li>
+
+  <li class="nav-item" id="nav-cruise"
+      [class.active]="activeIndex === 9"
+      (click)="setActive(9)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-ship"></i>
+      </span>
+      <span class="nav-text">Cruise</span>
+    </a>
+  </li>
+
+  <li class="nav-item lt"
+      [class.active]="activeIndex === 10"
+      (click)="setActive(10)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-money-bill-wave"></i>
+      </span>
+      <span class="nav-text">ForexCard &Currency</span>
+    </a>
+  </li>
+
+  <li class="nav-item lt"
+      [class.active]="activeIndex === 11"
+      (click)="setActive(11)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-shield-heart"></i>
+      </span>
+      <span class="nav-text">Travel Insurance</span>
+    </a>
+  </li>
+
+  <li class="nav-item" id="nav-more"
+      [class.active]="activeIndex === 12"
+      (click)="setActive(12)">
+    <a href="#">
+      <span class="nav-icon">
+        <i class="fa-solid fa-ellipsis"></i>
+      </span>
+      <div>
+        <span class="nav-text">
+          More  
+          <i class="fa-solid fa-chevron-down down-small"></i>
         </span>
-        <span class="nav-text">Flights</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa fa-building" aria-hidden="true"></i>
-        </span>
-        <span class="nav-text">Hotels</span>
-      </a>
-    </li>
-    <li class="nav-item lt">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-house-chimney"></i>
-        </span>
-        <span class="nav-text">Villas & Homestays</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-umbrella-beach"></i>
-        </span>
-        <span class="nav-text">Holiday Packages</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-train"></i>
-        </span>
-        <span class="nav-text">Trains</span>
-      </a>
-    </li>
-        <li class="nav-item">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-bus"></i>
-        </span>
-        <span class="nav-text">Buses</span>
-      </a>
-    </li>
-        <li class="nav-item">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-taxi"></i>
-        </span>
-        <span class="nav-text">Cabs</span>
-      </a>
-    </li>
-    <li class="nav-item" id="nav-tour">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-map-location-dot"></i>
-        </span>
-        <span class="nav-text">Tours & Attraction</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-passport"></i>
-        </span>
-        <span class="nav-text">Visa</span>
-      </a>
-    </li>
-    <li class="nav-item" id="nav-cruise">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-ship"></i>
-        </span>
-        <span class="nav-text">Cruise</span>
-      </a>
-    </li>
-    <li class="nav-item lt">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-money-bill-wave"></i>
-        </span>
-        <span class="nav-text">ForexCard &Currency</span>
-      </a>
-    </li>
-        <li class="nav-item lt">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-shield-heart"></i>
-        </span>
-        <span class="nav-text">Travel Insurance</span>
-      </a>
-    </li>
-    <li class="nav-item" id="nav-more">
-      <a href="#">
-        <span class="nav-icon">
-          <i class="fa-solid fa-ellipsis"></i>
-        </span>
-        <div>
-        <span class="nav-text">More  
-        <i class="fa-solid fa-chevron-down down-small"></i>
-        </span>
-        </div>
-      </a>
-    </li>
-  </ul>
+      </div>
+    </a>
+  </li>
+</ul>
 
   <div class="header-right">
 
@@ -225,4 +264,8 @@
 
   </div>
 </header>
+
+<div class="hdwidget">
+  <app-headwidget></app-headwidget>
+</div>
 </div>

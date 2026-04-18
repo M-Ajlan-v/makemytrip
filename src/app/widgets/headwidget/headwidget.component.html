@@ -1,0 +1,158 @@
+<div class="container">
+
+    <div class="ad-banner">
+
+    <img src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/spa/spaBannerLeftIcon.webp" class="left-icon">
+    <img src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/spa/myraAI.webp?v=1" class="logo">
+    <span class="ad-text">Your AI Assistant for Flights & Stays</span>
+    <img src="https://imgak.mmtcdn.com/flights/assets/media/dt/rta_assets/arrow_right.png" class="arrow-right-icon">
+  </div>
+
+  <div class="top-bar">
+    <ul class="trip-tabs">
+  <li 
+    class="trip-tab"
+    [class.active]="selectedTab === 'oneway'"
+    (click)="selectTab('oneway')"
+  >
+    <span class="trip-tab__circle"></span>
+    <span class="trip-tab__text">One Way</span>
+  </li>
+
+  <li 
+    class="trip-tab"
+    [class.active]="selectedTab === 'roundtrip'"
+    (click)="selectTab('roundtrip')"
+  >
+    <span class="trip-tab__circle"></span>
+    <span class="trip-tab__text">Round Trip</span>
+  </li>
+
+  <li 
+    class="trip-tab"
+    [class.active]="selectedTab === 'multicity'"
+    (click)="selectTab('multicity')"
+  >
+    <span class="trip-tab__circle"></span>
+    <span class="trip-tab__text">Multi City</span>
+  </li>
+</ul>
+    <div class="right-text">
+    <p class="booking-text">
+      Book <a href="#">International</a> and <a href="#">Domestic Flights</a>
+    </p>
+    </div>
+  </div>
+  <div class="fsw">
+    <div class="search-box">
+
+  <div class="input-box from">
+    <label>From</label>
+    <input type="text" value="Delhi" readonly>
+    <p class="sub-text">DEL, Delhi Airport India</p>
+  </div>
+
+  <div class="swap">⇌</div>
+  <div class="input-box to">
+    <label>To</label>
+    <input type="text" value="Mumbai" readonly class="bigger">
+    <p class="sub-text">BOM, Chhatrapati Shivaji International Airport India</p>
+  </div>
+  <div class="input-box dptr">
+    <div class="labl">
+    <label>Departure</label>
+    <i class="fa-solid fa-chevron-down down-small"></i>
+    </div>
+    <p class="date">
+      <span class="big"><b>18</b></span>
+      <span class="april">Apr'26</span>
+    </p>
+    <p class="day sub-text">Saturday</p>
+  </div>
+  <div class="input-box return-box">
+    <div class="labl">
+    <label>Return</label>
+    <i class="fa-solid fa-chevron-down down-small"></i>
+    </div>
+    <span class="rtn-text"><strong>
+      Tap to add a return <br> date for bigger <br>discounts</strong>
+    </span>
+  </div>
+
+  <div class="input-box travellers-box">
+    <div class="labl">
+      <label>Travellers & Class</label>
+      <i class="fa-solid fa-chevron-down down-small"></i>
+      </div>
+    <div class="trav">
+      <span class="big">1</span> <span id="travel">Traveller</span>
+    </div>
+
+    <p class="sub-text">Economy / Premium Economy</p>
+</div>
+</div>
+
+
+    <div class="special-fares">
+      <div class="side">
+        <span class="side-txt">
+          SPECIAL FARES
+        </span>
+      </div>
+    <div class="fares">
+<div  class="fare-tag" [class.active]="selectedFare === 'regular'" (click)="selectFare('regular')">
+    <p class="title">Regular</p>
+    <p class="sub">Regular fares</p>
+  </div>
+
+  <div  class="fare-tag" [class.active]="selectedFare === 'student'" (click)="selectFare('student')">
+    <p class="title">Student</p>
+    <p class="sub">Extra discounts/baggage</p>
+  </div>
+
+  <div  class="fare-tag" [class.active]="selectedFare === 'armed'" (click)="selectFare('armed')">
+    <p class="title">Armed Forces</p>
+    <p class="sub">Up to ₹ 600 off</p>
+  </div>
+
+  <div  class="fare-tag" [class.active]="selectedFare === 'gst'" (click)="selectFare('gst')">
+    <p class="title">
+      Have a GST number ?
+      <span class="new-tag">
+        <img src="https://imgak.mmtcdn.com/flights/assets/media/mobile/gif/new_tag.gif" alt="">
+      </span>
+    </p>
+    <p class="sub">Upto 10% Extra Savings !</p>
+  </div>
+
+  <div class="fare-tag" [class.active]="selectedFare === 'senior'" (click)="selectFare('senior')">
+    <p class="title">Senior Citizen</p>
+    <p class="sub">Up to ₹ 600 off</p>
+  </div>
+
+  <div  class="fare-tag" [class.active]="selectedFare === 'doctor'" (click)="selectFare('doctor')">
+    <p class="title">Doctor and Nurses</p>
+    <p class="sub">Up to ₹ 600 off</p>
+  </div>
+    </div>
+  </div>
+
+<div class="extra-features">
+  <div class="features">
+    <div class="feature" [class.active]="selectedFeature === 'tracker'" (click)="selectFeature('tracker')">
+      <img src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/fis_entry_point_2.webp">
+      <span>Flight Tracker</span>
+    </div>
+
+    <div  class="feature" [class.active]="selectedFeature === 'dutyfree'" (click)="selectFeature('dutyfree')">
+      <img src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/bag_dt.webp">
+      <span>Shop Duty Free</span>
+    </div>
+  </div>
+</div>
+</div>
+<p class="action-wrap">
+  <button class="flight-search-btn">
+    Search
+  </button>
+</p>

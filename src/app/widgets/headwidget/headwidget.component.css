@@ -1,0 +1,337 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    padding-top: 65px;
+}
+.ad-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+    width: max-content;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background: radial-gradient(ellipse at center, rgba(251, 232, 101, 0.5) 0%, rgba(186, 230, 130, 0.5) 50%, rgba(121, 227, 158, 0.5) 100%);
+    transition: box-shadow 0.2s ease;
+    gap: 10px;
+}
+.arrow-right-icon{
+    width: 15px;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+.left-icon{
+    height: 48px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.logo{
+    height: 24px;
+    width: auto;
+    flex-shrink: 0;
+}
+.ad-text{
+    font-weight: 700;
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    padding: 0 19px;
+}
+.trip-tabs{
+    display: flex;
+    list-style: none;
+
+}
+.trip-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin: 0 8px;
+    padding: 4px 0px;
+    border-radius: 20px;
+    
+}
+.right-text{
+    margin-left: auto;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+a{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+.trip-tab__text{
+    color: #4a4a4a;
+    font-size: 14px;
+}
+.trip-tab__circle{
+  width: 10px;
+  height: 10px;
+  border: 1px solid #030303;
+  border-radius: 50%;
+}
+
+
+
+.trip-tab__circle::after{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 6px;
+    border: solid #fff;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+    margin-top: 1.3px;
+    margin-left: 3.2px;
+}
+.trip-tab.active .trip-tab__circle {
+  background: #008cff;
+  border-color: #008cff;
+}
+.trip-tab.active {
+    background: #eaf5ff;
+}
+.trip-tab.active .trip-tab__text{
+    font-weight: 900;
+    color: #000000;
+    font-size: 15px;
+    
+}
+.fsw{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 11px 19px;
+}
+.search-box{
+    display: flex;
+    border: #000000;
+    border-radius: 10px;
+    background-color: #423434;
+    margin-bottom: 20px;
+    align-items: stretch;
+    justify-content: center;
+    border: 1px solid #d8d8d8;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    width: 100%;
+    margin: 0 19px;
+
+}
+.input-box input{
+    border: none;
+    font-size: 30px;
+    font-weight: 900;
+}
+.input-box label{
+    font-size: 14px;
+    margin-top: -12px;
+    margin-bottom: 5px;
+}
+.input-box .sub-text{
+    font-size: 14px;
+    color: #4a4a4a;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.big{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+.april{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.rtn-text{
+    color: #9b9b9b;
+    font-size: 12px;
+    font-weight: 900;
+    width: 140px;
+    
+}
+.return-box .labl{
+    width: 140px;
+}
+.trav{
+    display:flex;
+    align-items:baseline;
+    gap: 5px;
+}
+#travel{
+    font-size: 20px;
+}
+.search-box {
+  display: flex;
+  position: relative;   
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  height: 100%;
+  height: 114px;
+  margin-bottom: 20px;
+  
+}
+
+.input-box {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 19px;
+  border-right: 1px solid #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2px;
+}
+.travellers-box{
+    border-right: none;
+}
+.from, .to {
+  flex: 1.8;
+  margin-right: 10px;
+}
+.return-box {
+  flex: 1;
+
+}
+
+.travellers-box {
+  flex: 1.3;
+}
+.swap {
+  position: absolute;
+  left: 25%;            
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #008cff;
+  z-index: 10;
+}
+.down-small{
+    font-size: 12px;
+    color: #008cff;
+    font-weight: 900;
+    margin-left: 6px;
+}
+.special-fares{
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex: 1;
+}
+.side{
+    width: 56px;
+    margin-right: 60px;
+    font-weight: 900;
+    font-size: 15px;
+}
+.fares{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+}
+.fare-tag{
+    position: relative;
+    padding: 8px 12px;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-bottom: 12px;
+    border:1px solid #d8d8d8;
+    border-radius: 8px;
+}
+.fare-tag.active{
+        background-color: rgb(234, 245, 255);
+        border:1px solid #008cff;
+}
+.fares .title{
+    font-size: 14px;
+    font-weight: 550;
+}
+.sub{
+    font-size: 12px;
+    color: #4a4a4a;
+}
+.new-tag img{
+    width: 25px;
+}
+.extra-features{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.features{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 0 5px;
+    margin-bottom: 20px;
+
+}
+.feature img{
+    width: 25px;
+    height: 25px;
+}
+.feature{
+    position: relative;
+    padding: 12px 11px;
+    display: flex;
+    cursor: pointer;
+    border:1px solid #d8d8d8;
+    border-radius: 8px;
+    font-size: 14px;
+    gap: 10px;
+    width: 130px;
+    margin-left: -5px;
+}
+.feature.active{
+        background-color: rgb(234, 245, 255);
+        border:1px solid #008cff;
+}
+.flight-search-btn{
+    background: linear-gradient(93deg, #53b2fe, #065af3);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    border-radius: 34px;
+    width: 216px;
+    padding: 7px 10px;
+    margin-bottom: -20px;
+    opacity: 1;
+    font-size: 25px;
+    font-weight: 900;
+}
+.action-wrap{
+    justify-content: center;
+    display: flex;
+}
