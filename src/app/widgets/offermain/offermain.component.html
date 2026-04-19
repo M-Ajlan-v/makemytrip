@@ -1,0 +1,73 @@
+<div class="offer">
+  <div class="offers-header">
+   <div class="left-panel">
+    <h2>Offers</h2>
+    <div class="list">
+      <ul class="tabs">
+  <li 
+    *ngFor="let tab of tabs" 
+    [class.active]="activeTab === tab"
+    (click)="setActive(tab)">
+    {{ tab }}
+  </li>
+</ul>
+    </div>
+    </div>  
+
+    <div class="controls">
+      <span class="view-all">
+          <span>VIEW ALL</span>
+         <i class="fa-solid fa-arrow-right-long"></i>
+      </span>
+      <div class="btnz">
+      <button id="prev" (click)="scrollPrev()">  
+         <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="next" (click)="scrollNext()">
+         <i class="fa-solid fa-chevron-right"></i>
+      </button>
+   </div>
+    </div>
+  </div>
+<!-- slider -->
+
+
+   <div class="slide">
+      <div class="sticky-slider" #sliderTrack   (mousemove)="onDrag($event)">
+      <div class="track">
+
+        <div class="col" *ngFor="let col of groupedOffers">
+
+  <!-- Card 1 & 2 automatically handled -->
+  <div class="card-out" *ngFor="let card of col">
+    <div class="cbox">
+
+      <div class="crow">
+        <div class="cthumb">
+          <img [src]="card.img">
+        </div>
+
+        <div class="cinfo">
+          <div class="chead">
+            <span class="ctag-txt">{{ card.category }}</span>
+            <span class="ctnc">T&C's Apply</span>
+          </div>
+
+          <p class="ctitle">{{ card.title }}</p>
+          <span class="cline"></span>
+          <p class="ctext">{{ card.text }}</p>
+        </div>
+      </div>
+
+      <div class="cfoot">
+        <a class="cbtn">{{ card.btn }}</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+      </div>
+      </div>
+   </div>
+</div>
