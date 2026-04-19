@@ -1,0 +1,44 @@
+.flight-c{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 40px 40px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.flightlist{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.f-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.title{
+    color: rgb(74, 74, 74);
+    font-size: 18px;
+}
+.sub{
+    font-size: 14px;
+        color: rgb(74, 74, 74);
+
+}
+.sub a{
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+}

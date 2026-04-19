@@ -1,0 +1,30 @@
+.footer-container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.insta img{
+    width: 88px;
+}
+.x img{
+    width: 48px;
+}
+.fb img{
+    width: 48px;
+}
+.linkdin img{
+    width: 48px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.CC{
+    font-size: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+}

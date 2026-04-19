@@ -1,0 +1,28 @@
+<div class="flight-c">
+    <div class="flightlist">
+        <ul class="list">
+            <li class="item" *ngFor="let item of flightList">
+
+            <div class="f-img">
+                <img [src]="item.image" alt="">
+            </div>
+
+            <div class="text">
+                <h3 class="title">{{ item.title }}</h3>
+
+                <p class="sub">
+                Via -
+                <ng-container *ngFor="let city of item.via; let i = index">
+                    <a [href]="city.link" class="via-link">
+                    {{ city.name }}
+                    </a><span *ngIf="i < item.via.length - 1">, </span>
+                </ng-container>
+                </p>
+            </div>
+
+            </li>
+
+
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="foot-container">
+    <div class="footer-main">
+        <div class="footNav">
+            <ng-container *ngFor="let section of footerData">
+
+                <p class="head-para">
+                {{ section.title }}
+                </p>
+
+                <ul class="list">
+                <li *ngFor="let item of section.links; let i = index">
+                    <a href="#" class="foot-link">
+                    {{ item.name }}
+                    </a>
+                    <span class="comma" *ngIf="i < section.links.length - 1">,&nbsp;</span>
+                </li>
+                </ul>
+            </ng-container>
+        </div>
+    </div>
+</div>

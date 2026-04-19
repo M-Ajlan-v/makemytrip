@@ -1,0 +1,125 @@
+.down-container{
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+.left-download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+}
+.down-img img{
+    width: 63px;
+    height: 63px;
+}
+.down-img{
+    margin-right: 20px;
+}
+.down-text .title{
+    font-size: 32px;
+    font-weight: 900;
+}
+.down-text .sub{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+b{
+    color: black;
+    font-weight: 900;
+}
+.contact{
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+
+}
+.phoneWrap{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.flagBox{
+    padding-top: 1px;
+    display: flex;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #9b9b9b;
+    border-right: 0;
+    height: 39px;
+    padding-right: 10px;
+}
+.flagBox img{
+    width: 23px;
+    height: 19px;
+    margin-left: 10px;
+}
+.flagInner{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0;
+}
+.countryCode{
+    margin-left: 5px;
+}
+.mobileInput{    
+    width: 270px;
+    padding: 0 9px;
+    height: 40px;
+    border: solid 1px #9b9b9b;
+    background-color: #ffffff;
+    outline: 0;
+    padding: 0;
+    font-size:14px;
+    border-radius: 0;
+    border-left: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #000;
+}
+.getLinkBtn{
+    width: 160px;
+    height: 40px;
+    border-radius: 0 4px 4px 0;
+    border: solid 1px #008cff;
+    font-size:16px ;
+    font-weight: 900;
+    color: #008cff;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+}
+.right{
+    display: flex;
+    align-items: end;
+    justify-content:baseline;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.get{
+    display: flex;
+    align-items: center;
+}
+.get img{
+    width: 148px;
+}
+.getQR img{
+    width: 105px;
+    height: 105px;
+}

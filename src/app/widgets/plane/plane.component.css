@@ -1,0 +1,42 @@
+.plane-container{
+    width: 800px;
+    max-height: 110px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.plane-cols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+}
+.plane-ban{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 5px;
+    border-radius: 6px;
+    padding: 10px 30px;
+    min-height: 80px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 0.2);    
+    background-color: white;
+}
+.plane-img{
+    margin-right: 10px;
+}
+.plane-img img{
+    height: 68px;
+    width: 68px;
+}
+.blue{
+    color: #008cff;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    color: #4a4a4a;
+}
