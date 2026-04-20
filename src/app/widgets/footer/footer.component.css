@@ -39,7 +39,7 @@
 }
 
 .foot-link:hover {
-    text-decoration: underline;
+    color: #008cff;
 }
 
 .list + .head-para {
